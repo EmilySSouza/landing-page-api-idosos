@@ -4,5 +4,3 @@ export interface Activity {
   categoria: string;
   local: string;
 }
-
-export type Category = 'dança' | 'saúde' | 'tecnologia' | 'arte' | 'esporte' | 'lazer' | 'cultura';
