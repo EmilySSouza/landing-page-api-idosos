@@ -3,8 +3,6 @@ import { Activity } from '../types/activities';
 
 export const useActivities = () => {
   const [allActivities, setAllActivities] = useState<Activity[]>([]);
-  const [healthActivities, setHealthActivities] = useState<Activity[]>([]);
-  const [spActivities, setSpActivities] = useState<Activity[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [filters, setFilters] = useState<{
@@ -81,8 +79,6 @@ export const useActivities = () => {
 
   return {
     allActivities,
-    healthActivities,
-    spActivities,
     filteredActivities,
     estados,
     categorias,
